@@ -42,7 +42,17 @@ hyprctl configerrors
 
 `hyprctl configerrors` 需在 Hyprland 会话中执行。若当前 Noctalia 的设置 UI 已保存相同选项，它们可能存储在 `~/.local/state/noctalia/settings.toml` 并覆盖手写 TOML。
 
-## 5. 主题微调
+## 5. 剪贴板历史（可选）
+
+在仓库根目录执行：
+
+~~~bash
+./scripts/install-clipboard-history.sh
+~~~
+
+该功能使用 cliphist、wl-clipboard 和 Fuzzel，按 Super+V 打开搜索弹窗。详细用法、服务状态与隐私注意事项见 [剪贴板历史指南](clipboard-history.md)。
+
+## 6. 主题微调
 
 在 Noctalia 设置中调整 Bar、Dock、字体、主题与壁纸。推荐：
 - 顶部 Bar：厚度约 32–36 px，暗色、透明度约 0.8，支持模糊时开启 compositor blur。
@@ -50,7 +60,7 @@ hyprctl configerrors
 - Dock 的 `pinned` 使用桌面入口 ID，例如 `firefox`、`kitty`、`thunar`。如果占位图标出现，检查 `/usr/share/applications/` 中的 .desktop 文件。
 - macOS 的应用菜单是应用集成能力；Linux 顶部 Bar 不会自动获得所有应用的全局菜单。
 
-## 6. 回滚
+## 7. 回滚
 
 找到安装脚本输出的备份路径：
 
