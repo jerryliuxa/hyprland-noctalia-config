@@ -9,6 +9,7 @@
 - Hyprland Lua 配置：圆角、间距、动画、常用快捷键、截图和 Noctalia 自动启动。
 - Noctalia v5+ TOML：顶部状态栏、半透明效果、底部 Dock、运行应用指示、鼠标悬停放大与自动隐藏。
 - 可选 Fcitx5 + Rime 中文输入方案。
+- 剪贴板历史：cliphist + wl-clipboard + Fuzzel，支持文本/图片记录和 Super+V 搜索选择。
 - 简体中文 Locale 和 CJK 字体配置指南。
 - Arch Linux 安装、配置备份与恢复脚本。
 - 脚本仅操作明确的目标文件，不删除无关配置。
@@ -56,6 +57,14 @@ less scripts/packages-arch.txt
 ```bash
 ./scripts/install-noctalia-config.sh
 ```
+
+剪贴板历史是可选功能。安装所需依赖后执行：
+
+```bash
+./scripts/install-clipboard-history.sh
+```
+
+该脚本启用文本和图片监听服务，并将 `Super + V` 绑定到 Fuzzel 搜索弹窗。详见 [剪贴板历史指南](docs/clipboard-history.md)。剪贴板可能含有密码或令牌，请留意隐私并按需执行 `cliphist wipe` 清空历史。
 
 然后登录 Hyprland 会话。Noctalia v5+ 通常使用 `noctalia` 命令；配置文件会由 Hyprland 启动事件调用 `noctalia --daemon`。首次运行后可执行：
 
