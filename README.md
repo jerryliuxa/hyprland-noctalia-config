@@ -107,8 +107,14 @@ hyprland-noctalia-config/
 │   ├── install-config.sh
 │   ├── install-noctalia-config.sh
 │   ├── restore-config.sh
+│   ├── clipboard-history-picker.sh
+│   ├── install-clipboard-history.sh
 │   └── packages-arch.txt
+├── systemd/user/
+│   ├── cliphist-text.service
+│   └── cliphist-image.service
 ├── docs/
+│   ├── clipboard-history.md
 │   ├── installation.md
 │   ├── chinese-input-and-locale.md
 │   └── troubleshooting.md
