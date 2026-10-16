@@ -15,7 +15,7 @@ less scripts/packages-arch.txt
 ./scripts/install-noctalia-config.sh
 ```
 
-The scripts back up existing target files under `~/.config-backups/`. Review scripts and config files before running. The project targets Hyprland 0.55+ Lua configuration and Noctalia v5+; older versions use different configuration/startup conventions.
+Optional clipboard history uses cliphist + wl-clipboard, with a searchable Fuzzel picker on `Super+V`. Install it with `./scripts/install-clipboard-history.sh` after installing the packages. See [clipboard history guide](docs/clipboard-history.md). The scripts back up existing target files under `~/.config-backups/`. Review scripts and config files before running. The project targets Hyprland 0.55+ Lua configuration and Noctalia v5+; older versions use different configuration/startup conventions.
 
 Validate Noctalia after installation:
 
