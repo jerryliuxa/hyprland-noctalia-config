@@ -38,6 +38,9 @@ hl.bind("SUPER + RETURN", hl.dsp.exec_cmd("kitty"), {
 hl.bind("SUPER + SPACE", hl.dsp.exec_cmd("noctalia msg panel-toggle launcher"), {
     description = "Open Noctalia launcher",
 })
+hl.bind("SUPER + V", hl.dsp.exec_cmd("~/.local/bin/clipboard-history-picker"), {
+    description = "Search clipboard history",
+})
 hl.bind("SUPER + S", hl.dsp.exec_cmd("noctalia msg panel-toggle control-center"), {
     description = "Toggle Noctalia Control Center",
 })
