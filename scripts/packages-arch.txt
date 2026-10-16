@@ -1,0 +1,44 @@
+# Core Wayland desktop
+hyprland
+noctalia
+kitty
+fuzzel
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+polkit-gnome
+
+# Audio, networking and controls
+pipewire
+pipewire-pulse
+wireplumber
+networkmanager
+network-manager-applet
+brightnessctl
+playerctl
+
+# Screenshots and file management
+grim
+slurp
+wl-clipboard
+thunar
+
+# Fonts and themes
+noto-fonts
+noto-fonts-cjk
+noto-fonts-emoji
+papirus-icon-theme
+
+# Lock screen / idle management
+hypridle
+hyprlock
+
+# Optional Chinese input (remove these lines if not needed)
+fcitx5
+fcitx5-rime
+fcitx5-configtool
+fcitx5-gtk
+fcitx5-qt
+
+# Optional Qt Wayland integration
+qt5-wayland
+qt6-wayland

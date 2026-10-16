@@ -1,0 +1,16 @@
+# Runtime logs and caches
+*.log
+.cache/
+.cache-*/
+
+# Editor and OS files
+.DS_Store
+Thumbs.db
+*~
+*.swp
+*.swo
+
+# Local machine-specific state
+local.env
+.env
+settings.local.toml

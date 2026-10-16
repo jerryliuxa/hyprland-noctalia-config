@@ -1,0 +1,64 @@
+# Noctalia Shell v5+ configuration.
+# Reference: https://docs.noctalia.dev/noctalia/configuration/
+# GUI-managed overrides in ~/.local/state/noctalia/settings.toml take precedence.
+
+[theme]
+mode = "dark"
+
+[shell]
+corner_radius_scale = 1.15
+
+[bar]
+order = ["default"]
+
+[bar.default]
+enabled = true
+position = "top"
+auto_hide = false
+reserve_space = true
+layer = "top"
+thickness = 34
+background_opacity = 0.82
+compositor_blur = true
+border_width = 0.0
+shadow = true
+radius = 10
+margin_ends = 8
+margin_edge = 0
+padding = 12
+widget_spacing = 8
+font_weight = 500
+start = ["launcher", "workspaces"]
+center = ["clock"]
+end = ["media", "tray", "network", "bluetooth", "volume", "battery", "notifications", "control-center", "session"]
+
+[dock]
+enabled = true
+position = "bottom"
+active_monitor_only = false
+icon_size = 48
+main_axis_padding = 16
+cross_axis_padding = 8
+item_spacing = 6
+background_opacity = 0.88
+border = "outline"
+border_width = 0.0
+shadow = true
+radius = 16
+margin_ends = 0
+margin_edge = 8
+show_running = true
+auto_hide = true
+smart_auto_hide = false
+reserve_space = false
+layer = "overlay"
+active_scale = 1.0
+inactive_scale = 0.85
+magnification = true
+magnification_scale = 1.45
+active_opacity = 1.0
+inactive_opacity = 0.85
+show_instance_count = true
+show_dots = true
+launcher_position = "none"
+pinned = ["firefox", "kitty", "thunar"]

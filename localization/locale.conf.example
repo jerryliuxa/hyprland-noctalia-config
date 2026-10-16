@@ -1,0 +1,6 @@
+# Example for /etc/locale.conf (after generating these locales with locale-gen).
+# Choose this mixed setup to keep most system/tool output in English while using
+# Simplified Chinese for GUI message translations and Chinese date formatting.
+LANG=en_US.UTF-8
+LC_MESSAGES=zh_CN.UTF-8
+LC_TIME=zh_CN.UTF-8
