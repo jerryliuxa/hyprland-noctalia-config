@@ -66,4 +66,6 @@ hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.on("hyprland.start", function()
     hl.exec_cmd("noctalia --daemon")
     hl.exec_cmd("if command -v fcitx5 >/dev/null 2>&1; then fcitx5 -d; fi")
+    -- Refresh the user systemd environment before starting clipboard watchers.
+    hl.exec_cmd("if command -v cliphist >/dev/null 2>&1; then systemctl --user import-environment WAYLAND_DISPLAY XDG_RUNTIME_DIR; systemctl --user restart cliphist-text.service cliphist-image.service; fi")
 end)
