@@ -35,6 +35,23 @@ hyprctl configerrors
 
 若你的版本较旧，先查阅对应版本的官方文档；不要把 Lua 配置直接粘贴进旧版 `hyprland.conf`。
 
+## 剪贴板历史没有记录
+
+检查用户服务和当前历史：
+
+~~~bash
+systemctl --user status cliphist-text.service cliphist-image.service
+cliphist list
+~~~
+
+确认已在 Hyprland 图形会话中运行服务。重新启动监听器：
+
+~~~bash
+systemctl --user restart cliphist-text.service cliphist-image.service
+~~~
+
+清空历史（不可撤销）：`cliphist wipe`。更多说明见 [剪贴板历史指南](clipboard-history.md)。
+
 ## 中文输入没有反应
 
 ```bash
