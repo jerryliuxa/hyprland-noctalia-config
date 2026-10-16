@@ -16,10 +16,11 @@ network-manager-applet
 brightnessctl
 playerctl
 
-# Screenshots and file management
+# Screenshots, clipboard history, and file management
 grim
 slurp
 wl-clipboard
+cliphist
 thunar
 
 # Fonts and themes
