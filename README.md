@@ -49,14 +49,13 @@ Back up your current configs and install the Hyprland starter:
 ./scripts/install-config.sh
 ```
 
-The script installs `hypr/hyprland.lua` to `~/.config/hypr/hyprland.lua` only after backing up any existing file. It does **not** overwrite a pre-existing Noctalia configuration; copy the example manually after backing up and review it first:
+The script installs the Hyprland starter after backing up any existing target file. It does not automatically replace Noctalia settings. To install the Noctalia template, run:
 
 ```bash
-mkdir -p ~/.config/noctalia
-cp noctalia/config.toml ~/.config/noctalia/config.toml.example
+./scripts/install-noctalia-config.sh
 ```
 
-Noctalia reads TOML configuration from `~/.config/noctalia/`. To avoid version-specific option errors, use the Noctalia settings UI to configure Bar and Dock, then consult the installed version's documentation before copying example options into your live config.
+That script backs up an existing `~/.config/noctalia/config.toml` before copying the repository template. Noctalia v5+ reads TOML from `~/.config/noctalia/`; after starting the shell, validate it with `noctalia config validate` and adjust Bar/Dock settings in the Settings UI as desired.
 
 ## Start Noctalia
 
